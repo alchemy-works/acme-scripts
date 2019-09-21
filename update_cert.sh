@@ -10,8 +10,8 @@ if [ -z "$DOMAIN" ]; then
   exit -1
 fi
 
-if [ ! -f "$DOMAIN/$DOMAIN.cer" ]; then
-    echo "File not exist: $DOMAIN/$DOMAIN.cer"
+if [ ! -f "$DOMAIN/fullchain.cer" ]; then
+    echo "File not exist: $DOMAIN/fullchain.cer"
     exit -1
 fi
 
