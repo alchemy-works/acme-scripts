@@ -21,3 +21,5 @@ fi
 mkdir -p "/etc/ssl/certs/$DOMAIN"
 cp "$DOMAIN/$DOMAIN.cer" "/etc/ssl/certs/$DOMAIN"
 cp "$DOMAIN/$DOMAIN.key" "/etc/ssl/certs/$DOMAIN"
+
+echo "Update $DOMAIN successful!"
