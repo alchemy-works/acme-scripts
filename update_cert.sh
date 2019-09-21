@@ -8,7 +8,7 @@ if [ -z "$DOMAIN" ]; then
   exit -1
 fi
 
-if [ ! -f "~/dp-acme/$DOMAIN/$DOMAIN.cer" ]; then
+if [ ! -f "$DOMAIN/$DOMAIN.cer" ]; then
     echo "File not exist: $DOMAIN/$DOMAIN.cer"
     exit -1
 fi
