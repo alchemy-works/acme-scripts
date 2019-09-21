@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Install cert for Nginx
+
 cd `dirname $0`
 DOMAIN=$1
 
@@ -19,7 +21,7 @@ if [ ! -f "$DOMAIN/$DOMAIN.key" ]; then
 fi
 
 mkdir -p "/etc/ssl/certs/$DOMAIN"
-cp "$DOMAIN/$DOMAIN.cer" "/etc/ssl/certs/$DOMAIN"
+cp "$DOMAIN/fullchain.cer" "/etc/ssl/certs/$DOMAIN"
 cp "$DOMAIN/$DOMAIN.key" "/etc/ssl/certs/$DOMAIN"
 
 echo "Update $DOMAIN successful!"
