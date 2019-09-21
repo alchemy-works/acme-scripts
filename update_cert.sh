@@ -18,6 +18,6 @@ if [ ! -f "$DOMAIN/$DOMAIN.key" ]; then
     exit -1
 fi
 
-mkdir -p "/etc/ssl/cert/$DOMAIN"
-cp "$DOMAIN/$DOMAIN.cer" "/etc/ssl/cert/$DOMAIN"
-cp "$DOMAIN/$DOMAIN.key" "/etc/ssl/cert/$DOMAIN"
+mkdir -p "/etc/ssl/certs/$DOMAIN"
+cp "$DOMAIN/$DOMAIN.cer" "/etc/ssl/certs/$DOMAIN"
+cp "$DOMAIN/$DOMAIN.key" "/etc/ssl/certs/$DOMAIN"
