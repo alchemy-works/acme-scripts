@@ -3,7 +3,7 @@
 cd `dirname $0`
 DOMAIN=$1
 
-if [ -z "$str" ]; then
+if [ -z "$DOMAIN" ]; then
   echo 'Domain required'
   exit -1
 fi
