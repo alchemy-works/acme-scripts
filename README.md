@@ -8,11 +8,14 @@ DNSPod，ACME
 
 ```
 # Use DNSPod token
-docker run --rm -itd -v ~/dp-acme:/acme.sh -e DP_Id= -e DP_Key= --name=acme.sh neilpang/acme.sh daemon
+DP_Id=
+DP_Key=
+docker run --rm -itd -v ~/dp-acme:/acme.sh -e DP_Id=$DP_Id -e DP_Key=$DP_Key --name=acme.sh neilpang/acme.sh daemon
 ```
 
-### Issue a cert
+### Issue and install a cert
 
 ```
-docker exec acme.sh --issue --dns dns_dp -d example.com
+docker exec acme.sh --issue --dns dns_dp -d example.com -d www.example.com
+sudo ./update_cert.sh example.com
 ```
