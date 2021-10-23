@@ -5,9 +5,9 @@
 ```sh
 docker run --rm -itd -v "$(pwd)/out":/acme.sh --name=acme.sh neilpang/acme.sh:3.0.1 daemon
 # Issue
-acme.sh --issue -d example.com --dns --yes-I-know-dns-manual-mode-enough-go-ahead-please
+docker exec acme.sh --issue -d example.com --dns --yes-I-know-dns-manual-mode-enough-go-ahead-please
 # Challenge
-acme.sh --renew -d example.com --yes-I-know-dns-manual-mode-enough-go-ahead-please
+docker exec acme.sh --renew -d example.com --yes-I-know-dns-manual-mode-enough-go-ahead-please
 # Install
 sudo ./install_cert example.com
 # Clean
