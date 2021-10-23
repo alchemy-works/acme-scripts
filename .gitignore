@@ -1,8 +1,2 @@
-.DS_Store
 .idea/
-*.iml
-http.header
-ca/
-*.com/
-*.org/
-*.conf
+
