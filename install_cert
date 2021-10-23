@@ -5,6 +5,7 @@ cd "$(dirname "$0")" || exit 1
 # Install cert for Nginx
 
 DOMAIN=$1
+cd out || exit 1
 
 if [ -z "$DOMAIN" ]; then
   echo 'Domain required'
