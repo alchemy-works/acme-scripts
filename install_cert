@@ -2,7 +2,7 @@
 cd "$(dirname "$0")" || exit 1
 # ---
 
-# Install cert for Nginx
+# Install cert
 
 DOMAIN=$1
 cd out || exit 1
