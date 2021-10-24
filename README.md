@@ -47,5 +47,5 @@ docker stop acme.sh
 
 ```sh
 # Use Let’s Encrypt
-acme.sh --set-default-ca --server letsencrypt
+docker exec acme.sh --set-default-ca --server letsencrypt
 ```
